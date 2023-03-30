@@ -8,8 +8,8 @@ Prerequisites
 
 ## Installation
 
-    1.Clone the repository: `git clone https://github.com/yourusername/ssh-user-enum.git`
-    2.Install the Paramiko library: `pip install paramiko`
+1.Clone the repository: `git clone https://github.com/yourusername/ssh-user-enum.git`
+2.Install the Paramiko library: `pip install paramiko`
 
 ## Usage
 ```bash 
