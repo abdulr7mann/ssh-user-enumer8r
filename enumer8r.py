@@ -1,6 +1,18 @@
 #!/usr/bin/env python3
 import argparse, logging, os, socket, subprocess, sys, paramiko
 
+banner = """
+  _____  __  __ _______ _______ _______ _______ _______ _______
+ / ____|/ _|/ _|__   __|__   __|__   __|__   __|__   __|__   __|
+| (___ | |_| |_   | |     | |     | |     | |     | |     | |
+ \___ \|  _|  _|  | |     | |     | |     | |     | |     | |
+ ____) | | | |    | |     | |     | |     | |     | |     | |
+|_____/|_| |_|    |_|     |_|     |_|     |_|     |_|     |_|
+
+                 ~ The Ultimate SSH USER Enumeration Tool ~
+                 ~ @Abdulr7mann
+"""
+
 class InvalidUsername(Exception):
     pass
 
@@ -33,9 +45,10 @@ def create_activate_check() -> bool:
         subprocess.run([sys.executable, "-m", "pip", "install", "paramiko"], check=True)
 
 if __name__ == "__main__":
+    print(banner)
     create_activate_check()
 
-    arg_parser = argparse.ArgumentParser(usage='%(prog)s [--host IP_ADDRESS | --ip-list IP_LIST | --user USER | --user-list USER_LIST] [--port PORT]')
+    arg_parser = argparse.ArgumentParser(usage='%(prog)s [--host 127.0.0.1 | --ip-list ips.txt | --user root | --user-list users.txt] [--port 22]')
     group = arg_parser.add_mutually_exclusive_group(required=True)
     group.add_argument('--host', type=str, help='Single IP address to attack')
     group.add_argument('--ip-list', type=str, help='File with a list of IP addresses')
