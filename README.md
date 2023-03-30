@@ -12,14 +12,16 @@ Prerequisites
     2.Install the Paramiko library: `pip install paramiko`
 
 ## Usage
-```bash python3 ssh.py [--host HOST | --ip-file IP_FILE | --user USER | --user-file USER_FILE] [-p 22]```
+```bash 
+python3 ssh.py [--host HOST | --ip-file IP_FILE | --user USER | --user-file USER_FILE] [-p 22]
+```
 Arguments:
 
-    *`--host`: single IP address to attack
-    *`--ip-file`: file with a list of IP addresses
-    *`--user`: single username to use for attacking
-    *`--user-file`: file with a list of usernames to use for attacking
-    *`-p`: SSH port (default is 22)
+    - `--host`: single IP address to attack
+    - `--ip-file`: file with a list of IP addresses
+    - `--user`: single username to use for attacking
+    - `--user-file`: file with a list of usernames to use for attacking
+    - `-p`: SSH port (default is 22)
 
 At least one IP and one username must be provided.
 ## Examples
