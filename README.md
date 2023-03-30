@@ -25,7 +25,8 @@ Arguments:
 
 At least one IP and one username must be provided.
 ## Examples
-```bash # Attack a single host with a single username
+```bash 
+# Attack a single host with a single username
 python3 enumer8r.py --host 127.0.0.1 --user root
 
 # Attack a list of hosts with a single username
