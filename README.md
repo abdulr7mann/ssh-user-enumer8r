@@ -33,7 +33,8 @@ python3 ssh.py --ip-file ips.txt --user admin
 python3 ssh.py --host 192.168.0.1 --user-file users.txt
 
 # Attack a list of hosts with a list of usernames
-python3 ssh.py --ip-file ips.txt --user-file users.txt```
+python3 ssh.py --ip-file ips.txt --user-file users.txt
+```
 
 
 ## License
