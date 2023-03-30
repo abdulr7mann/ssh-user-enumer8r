@@ -6,12 +6,12 @@ Prerequisites
     *Python 3
     *Paramiko library
 
-# Installation
+## Installation
 
     1.Clone the repository: `git clone https://github.com/yourusername/ssh-user-enum.git`
     2.Install the Paramiko library: `pip install paramiko`
 
-# Usage
+## Usage
 ```bash python3 ssh.py [--host HOST | --ip-file IP_FILE | --user USER | --user-file USER_FILE] [-p 22]```
 Arguments:
 
@@ -22,7 +22,7 @@ Arguments:
     *`-p`: SSH port (default is 22)
 
 At least one IP and one username must be provided.
-# Examples
+## Examples
 ```bash # Attack a single host with a single username
 python3 ssh.py --host 192.168.0.1 --user admin
 
@@ -36,11 +36,11 @@ python3 ssh.py --host 192.168.0.1 --user-file users.txt
 python3 ssh.py --ip-file ips.txt --user-file users.txt```
 
 
-# License
+## License
 -------
 This tool is released under the GNU General Public License v3.0. You can find a copy of the license in the LICENSE file.
 
-## Disclaimer
+### Disclaimer
 - This tool is provided as-is and without any warranty. The author assumes no responsibility or liability for any errors or omissions that may occur while using this tool. Use at your own risk.
 - This tool is intended for legal and authorized use only. Misuse of this tool can result in criminal charges and/or damage to systems. The author is not responsible for any misuse or damage caused by this tool. Use at your own risk.
 
