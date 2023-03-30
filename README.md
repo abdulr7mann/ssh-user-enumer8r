@@ -8,7 +8,7 @@ This Python script can be used to enumerate valid usernames on a target SSH serv
 
 ## Installation
 
-1.Clone the repository: `git clone https://github.com/yourusername/ssh-user-enum.git`
+1.Clone the repository: `git clone https://github.com/abdulr7mann/ssh-user-enumer8r.git`
 2.Install the Paramiko library: `pip install paramiko`
 
 ## Usage
