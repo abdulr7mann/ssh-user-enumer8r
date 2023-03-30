@@ -1,6 +1,6 @@
 # SSH User Enumeration
 
-This Python script can be used to enumerate valid usernames on a target SSH server. It uses the Paramiko library to perform the SSH connection and authentication.
+The Python script utilizes the Paramiko library to perform SSH connection and authentication and can be used to enumerate valid usernames on an SSH server with a version below 7.5. This vulnerability exists because SSH versions prior to 7.5 handle authentication failures differently for valid and invalid user accounts, which can be exploited by attackers to determine whether a specific username exists on the system or not.
 ## Prerequisites
 
 - Python 3
