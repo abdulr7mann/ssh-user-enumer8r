@@ -2,6 +2,8 @@
 - [![Twitter](https://img.shields.io/twitter/follow/abdulr7mann?style=social)](https://twitter.com/intent/follow?screen_name=abdulr7mann)
 - [![Discord](https://user-images.githubusercontent.com/7288322/34429152-141689f8-ecb9-11e7-8003-b5a10a5fcb29.png?label=Join&amp;style=social)](https://discord.gg/pN5dPYu)
 # SSH User Enumeration
+[![Current Release](https://img.shields.io/github/release/abdulr7mann/ssh-user-enumer8r.svg "Current Release")](https://github.com/abdulr7mann/ssh-user-enumer8r/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/abdulr7mann/ssh-user-enumer8r/total.svg "Downloads")](https://github.com/abdulr7mann/ssh-user-enumer8r/releases)
 
 The Python script utilizes the Paramiko library to perform SSH connection and authentication and can be used to enumerate valid usernames on an SSH server with a version below 7.5. This vulnerability exists because SSH versions prior to 7.5 handle authentication failures differently for valid and invalid user accounts, which can be exploited by attackers to determine whether a specific username exists on the system or not.
 ## Prerequisites
