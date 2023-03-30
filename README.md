@@ -13,29 +13,29 @@ This Python script can be used to enumerate valid usernames on a target SSH serv
 
 ## Usage
 ```bash 
-python3 ssh.py [--host HOST | --ip-file IP_FILE | --user USER | --user-file USER_FILE] [-p 22]
+python3 enumer8r.py [--host 127.0.0.1 | --ip-list ips.txt | --user root | --user-list users.txt] [--port 22]
 ```
 Arguments:
 
 - `--host`: single IP address to attack
-- `--ip-file`: file with a list of IP addresses
+- `--ip-list`: file with a list of IP addresses
 - `--user`: single username to use for attacking
-- `--user-file`: file with a list of usernames to use for attacking
-- `-p`: SSH port (default is 22)
+- `--user-list`: file with a list of usernames to use for attacking
+- `--port`: SSH port (default is 22)
 
 At least one IP and one username must be provided.
 ## Examples
 ```bash # Attack a single host with a single username
-python3 ssh.py --host 192.168.0.1 --user admin
+python3 enumer8r.py --host 127.0.0.1 --user root
 
 # Attack a list of hosts with a single username
-python3 ssh.py --ip-file ips.txt --user admin
+python3 enumer8r.py --ip-list ips.txt --user root
 
 # Attack a single host with a list of usernames
-python3 ssh.py --host 192.168.0.1 --user-file users.txt
+python3 enumer8r.py --host 127.0.0.1 --user-list users.txt
 
 # Attack a list of hosts with a list of usernames
-python3 ssh.py --ip-file ips.txt --user-file users.txt
+python3 enumer8r.py --ip-list ips.txt --user-list users.txt
 ```
 
 
